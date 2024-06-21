@@ -1,1 +1,9 @@
 /* место для вашего кода */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  
+}
