@@ -1,9 +1,51 @@
-/* место для вашего кода */
+/* общие стили */
+.content-section {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  width: 1100px;
+  margin: auto;
+}
+
+.content-section-accent {
+  box-sizing: border-box;
+  color: black;
+  width: 1100px;
+  margin: auto;
+}
+
+/* стили для хедера */
+.header {
+  margin: 92px 24px 96px 24px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  
+  }
+
+.header__links-list {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style: circle;
 }
+
+.header__logo-image {
+  background: url(../images/logo-black.svg) no-repeat;
+  width: 148px;
+  height: 105px;
+}
+
+/* стили для 1 секции */
+
+/* стили для 2 секции */
+
+/* стили для 3 секции */
+
+/* стили для футера */
+
+/* нужно создать стиль единый для секций и для каждой секции прописать отступы */
