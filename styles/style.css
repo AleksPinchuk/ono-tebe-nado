@@ -1,47 +1,157 @@
 /* общие стили */
 .content-section {
   box-sizing: border-box;
-  color: black;
-  background-color: white;
   width: 1100px;
   margin: auto;
+  color: black;
+  background-color: white;
 }
 
 .content-section-accent {
   box-sizing: border-box;
-  color: black;
   width: 1100px;
   margin: auto;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* стили для хедера */
 .header {
-  margin: 92px 24px 96px 24px;
+  padding: 92px 24px 96px 24px;
+  font-size: 18px;
+}
+
+.header-menu {
+  padding: 0;
 }
 
 nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 42% 16% 42%;
   align-items: center;
-  gap: 50px;
-  }
+}
+
+address {
+  justify-self: end;
+  padding-right: 63px;
+  line-height: 24px;
+}
 
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  justify-self: center;
+  gap: 20px;
+  padding-left: 12px;
+}
+
+.header__links-list-item {
+  padding-right: 13px;
+  text-decoration: underline;
   list-style: circle;
+
+  /* нужно создать отступы между подчеркиванием и текстом  */
+  /* увеличить межстрочное расстояние */
+}
+
+.header__links-list-item_no-bullit {
+  padding-right: 13px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-logo {
+  justify-self: center;
 }
 
 .header__logo-image {
-  background: url(../images/logo-black.svg) no-repeat;
   width: 148px;
   height: 105px;
+  background: url(../images/logo-black.svg) no-repeat;
 }
 
 /* стили для 1 секции */
+/* нужно создать стиль оверлей для фона */
+.cover {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
+.cover__title {
+  z-index: 5;
+  line-height: 1.15;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  margin-bottom: 135px;
+}
+
+.aligned-text {
+  margin-top: 20px;
+  display: block;
+  line-height: 1;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  justify-content: end;
+  align-items: center;
+  gap: 80px;
+  word-spacing: 18px;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.bet-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid currentColor;
+  font-family: inherit;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 12px 32px;
+}
 /* стили для 2 секции */
 
 /* стили для 3 секции */
