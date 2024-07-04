@@ -44,6 +44,7 @@
   font-style: normal;
   line-height: 24px;
   text-underline-offset: 4px;
+  max-width: 241px;
 }
 
 .header__links-list {
@@ -55,17 +56,21 @@
 
 .header__links-list-item {
   padding-right: 13px;
-  text-decoration: underline;
   text-underline-offset: 4px;
   list-style: circle;
-  /* нужно создать отступы между подчеркиванием и текстом  */
-  /* увеличить межстрочное расстояние */
 }
 
 .header__links-list-item_no-bullit {
   padding-right: 13px;
-  text-decoration: none;
   list-style: none;
+}
+
+.header__link {
+  text-decoration: underline;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .header-logo {
@@ -182,7 +187,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 563px;
+  min-height: 563px;
   padding: 51px 40px 48px;
   color: #fff;
   background-repeat: no-repeat;
@@ -238,7 +243,7 @@
 .about {
   max-width: 1052px;
   margin: 0 auto;
-  margin-bottom: 180px;
+  margin-bottom: 181px;
 }
 
 .about__column {
@@ -294,6 +299,7 @@
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 88px;
+  align-items: start;
 }
 
 .footer .address {
@@ -311,9 +317,14 @@
   font-size: 18px;
   line-height: 21.13px;
   text-align: center;
+  }
+
+.footer__menu-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.header__links-list-item_no-bullit {
+.footer__menu-link_active {
   text-decoration: none;
 }
 
@@ -325,9 +336,13 @@
   gap: 48px;
 }
 
-.footer__social-icon {
+.footer__social-link {
+  display: block;
   width: 48px;
   height: 48px;
+}
+
+.footer__social-icon {
   background-position: center;
   background-size: cover;
 }
